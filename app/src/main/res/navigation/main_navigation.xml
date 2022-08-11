@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/flightListFragment">
+
+    <fragment
+        android:id="@+id/flightListFragment"
+        android:name="com.ray.mvvmdemo.ui.fragment.FlightListFragment"
+        android:label="FlightListFragment"
+        tools:layout="@layout/fragment_flight_list"/>
+    <dialog
+        android:id="@+id/flightSheetFragment"
+        android:name="com.ray.mvvmdemo.ui.fragment.FlightSheetFragment"
+        android:label="FlightSheetFragment"
+        tools:layout="@layout/fragment_flight_sheet"/>
+    <fragment
+        android:id="@+id/flightDetailFragment"
+        android:name="com.ray.mvvmdemo.ui.fragment.FlightDetailFragment"
+        android:label="FlightDetailFragment"
+        tools:layout="@layout/fragment_flight_detail"/>
+</navigation>
