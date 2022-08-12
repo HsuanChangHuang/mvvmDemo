@@ -51,6 +51,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/orange"
+                android:buttonTint="@color/orange"
                 android:checked="true"
                 android:text="@string/flight_filter_newest"
                 android:textSize="18dp" />
@@ -59,6 +61,8 @@
                 android:id="@+id/rb_oldest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:buttonTint="@color/orange"
                 android:text="@string/flight_filter_oldest"
                 android:textSize="18dp" />
         </RadioGroup>

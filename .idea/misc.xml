@@ -6,7 +6,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.161" />
         <entry key="app/src/main/res/drawable/shape_sheet_dialog_bg.xml" value="0.161" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3880208333333333" />
-        <entry key="app/src/main/res/layout/fragment_flight_detail.xml" value="0.33796296296296297" />
+        <entry key="app/src/main/res/layout/fragment_flight_detail.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_flight_list.xml" value="0.33796296296296297" />
         <entry key="app/src/main/res/layout/fragment_flight_sheet.xml" value="0.33796296296296297" />
         <entry key="app/src/main/res/layout/item_flights.xml" value="0.33796296296296297" />

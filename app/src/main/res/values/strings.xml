@@ -3,8 +3,19 @@
 
     <string name="flight_all_launches">All launches</string>
     <string name="flight_launch_detail">Launch Detail</string>
-    <string name="flight_number">Flight number</string>
     <string name="flight_filter_newest">Flight number : newest</string>
     <string name="flight_filter_oldest">Flight number : oldest</string>
+    <string name="flight_number">Flight number</string>
+    <string name="flight_mission_name">Mission name</string>
+    <string name="flight_launch_date">Launch date</string>
+    <string name="flight_launch_site">Launch site</string>
+    <string name="flight_cores">Cores</string>
+    <string name="flight_cores_block">Block</string>
+    <string name="flight_cores_flight">Flight</string>
+    <string name="flight_cores_reused">Reused</string>
+    <string name="flight_cores_landing">Landing</string>
+    <string name="flight_no_info">No info</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
 </resources>

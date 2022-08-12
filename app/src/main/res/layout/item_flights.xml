@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <import type="android.widget.CompoundButton" />
-        <variable
-            name="viewModel"
-            type="com.ray.mvvmdemo.MainViewModel" />
+
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
