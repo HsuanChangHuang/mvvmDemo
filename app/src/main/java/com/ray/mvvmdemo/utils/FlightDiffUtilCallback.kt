@@ -1,4 +1,4 @@
-package com.ray.mvvmdemo
+package com.ray.mvvmdemo.utils
 
 import androidx.recyclerview.widget.DiffUtil
 import com.ray.mvvmdemo.model.data.FlightModel

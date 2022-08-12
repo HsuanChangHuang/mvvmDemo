@@ -1,4 +1,4 @@
-package com.ray.mvvmdemo
+package com.ray.mvvmdemo.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,16 +6,11 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.ray.mvvmdemo.databinding.ItemFlightsBinding
-import com.ray.mvvmdemo.model.ShareModel
 import com.ray.mvvmdemo.model.data.FlightModel
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
-import java.util.*
+import com.ray.mvvmdemo.utils.FlightDiffUtilCallback
+import com.ray.mvvmdemo.utils.TimeUtils
 
 class FlightAdapter (val listener: OnItemClickListener) : RecyclerView.Adapter<FlightAdapter.MyViewHolder>()  {
-    val inputFormatter = DateTimeFormatter.ISO_DATE_TIME
-    val outputFormatter = DateTimeFormatter.ofPattern("dd, MM, yyyy", Locale.US)
-
     var flightList: List<FlightModel.flightModelItem> = emptyList()
         set(value) {
             field = value
@@ -34,8 +29,7 @@ class FlightAdapter (val listener: OnItemClickListener) : RecyclerView.Adapter<F
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.itemFlightsBinding.tvFlightNumber.text = flightList[position].flightNumber.toString()
         holder.itemFlightsBinding.tvMissionName.text = flightList[position].missionName
-        val date = LocalDate.parse((flightList[position].launchDateLocal), inputFormatter)
-        holder.itemFlightsBinding.tvLaunchDateLocal.text = outputFormatter.format(date)
+        holder.itemFlightsBinding.tvLaunchDateLocal.text = TimeUtils.getTimeFormat(flightList[position].launchDateLocal)
         Glide.with(holder.itemView.context).load(flightList[position].links.missionPatchSmall).into(holder.itemFlightsBinding.ivFlight)
         holder.itemFlightsBinding.itemFlight.setOnClickListener {
             listener.onItemClick(flightList[position])

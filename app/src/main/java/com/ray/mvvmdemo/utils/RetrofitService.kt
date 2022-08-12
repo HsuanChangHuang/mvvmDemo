@@ -1,4 +1,4 @@
-package com.ray.mvvmdemo
+package com.ray.mvvmdemo.utils
 
 import android.util.Log
 import com.ray.mvvmdemo.model.data.FlightModel

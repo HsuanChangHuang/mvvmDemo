@@ -13,8 +13,13 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.ray.mvvmdemo.*
 import com.ray.mvvmdemo.databinding.FragmentFlightListBinding
+import com.ray.mvvmdemo.model.MainViewModel
 import com.ray.mvvmdemo.model.ShareModel
 import com.ray.mvvmdemo.model.data.FlightModel
+import com.ray.mvvmdemo.model.factory.MyViewModelFactory
+import com.ray.mvvmdemo.model.repository.MainRepository
+import com.ray.mvvmdemo.ui.adapter.FlightAdapter
+import com.ray.mvvmdemo.utils.RetrofitService
 
 class FlightListFragment : Fragment(), FlightAdapter.OnItemClickListener, FlightSheetFragment.OnFilterListener {
     companion object {

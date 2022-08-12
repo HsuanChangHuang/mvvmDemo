@@ -1,7 +1,8 @@
-package com.ray.mvvmdemo
+package com.ray.mvvmdemo.model
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.ray.mvvmdemo.model.repository.MainRepository
 import com.ray.mvvmdemo.model.data.FlightModel
 import kotlinx.coroutines.*
 

@@ -46,6 +46,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showToolbarBackButton(show: Boolean){
+        if (show){
+            binding.toolbarMain.title = getString(R.string.flight_launch_detail)
+        }else{
+            binding.toolbarMain.title = getString(R.string.flight_all_launches)
+        }
         supportActionBar?.setDisplayHomeAsUpEnabled(show)
         supportActionBar?.setDisplayShowHomeEnabled(show)
     }
@@ -54,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         if (keyCode == KeyEvent.KEYCODE_BACK) {
             val label = navController.currentDestination?.id
             return if (label == R.id.flightDetailFragment){
-//                navController.popBackStack()
+                navController.popBackStack()
                 false
             }else{
                 super.onKeyDown(keyCode, event)

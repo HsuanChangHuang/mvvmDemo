@@ -48,7 +48,6 @@ class FlightSheetFragment(val listener: OnFilterListener): BottomSheetDialogFrag
         if (filter != select){
             filter = select
             listener.OnFilterChange(filter)
-//            shareModel.listFilter.postValue(filter)
         }
         super.onDismiss(dialog)
     }
